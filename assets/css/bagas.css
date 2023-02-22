@@ -1,0 +1,290 @@
+/* 
+    Document   : Cilegon
+    Created on : Sep 15, 2017
+    Author     : BagasUnix
+    Description: Template MA Bootstrap
+        Purpose of the stylesheet follows.
+*/
+/* Menu */
+.navbar-bagas{
+	background: #EEA200;
+    border-bottom: 30px solid #008000;
+    color: #fff;
+}
+.navbar-bagas .navbar-nav>.active>a,
+.navbar-bagas .navbar-nav>.open>a,
+.navbar-bagas .navbar-nav> ul >li,
+.navbar-bagas .navbar-nav>li.focus>a,
+.navbar-bagas .navbar-nav > .active > a:focus,
+.navbar-bagas .navbar-nav > .active > a:hover,
+.navbar-bagas .navbar-nav > .active >a:visited,
+.navbar-bagas .navbar-nav>li:hover>a:hover {
+    background-image: #008000;
+    background: #008000;
+    background-color: #008000!important;
+    color: #FFF;
+    -webkit-transition: all  ease-in .3s;
+    -o-transition: all  ease-in .3s;
+    -moz-transition: all  ease-in .3s;
+    -ms-transition: all  ease-in .3s;
+    transition: all  ease-in .3s;
+}
+.dropdown-submenu {
+	position: relative;	
+	color: #fff;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+.dropdown-submenu .dropdown-menu {
+	left: 100%;
+	top: 0%;
+}
+.dropdown-submenu .pull-left {
+	float: none;
+}
+/*Selesai*/
+/* Animasi */
+.animasi {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+@-webkit-keyframes flipInY {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+/*Selesai*/
+/*btn cari*/
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+.navbar-collapse { position: relative; overflow: hidden !important; }
+.navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.nav-collapse { background-color: #EDA100; }
+.nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+/*Selesai*/
+/*Slider*/
+/* Slider */
+#custom_carousel .item {
+
+    color:#fff;
+    background-color:#008000!important;
+    padding:20px 0;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+.shadow{
+
+    width: 1000px;
+    background: url(../assets/img/shadow.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100px;   
+    margin-top: -60px;
+    z-index: -1;
+}
+/*Selesai*/
+/* Style Aldi */
+.bg{
+
+    background: #F2F2F2 url(../img/kolom.png) repeat-y top left;
+    border: 2px solid #3F8F15;
+    border-radius: 5px;
+    padding: 10px; 
+}
+.oren{ 
+        width: 100%;
+         height:50px; 
+         background-color: #EEA200;
+         color: #fff;
+
+}
+.hijau{
+            width: 100%;
+         height:20px; 
+         background-color: #008000;
+
+}
